@@ -21,6 +21,7 @@
 ### Interaction between kernel space and userspace by Strace
  It's like a protocol analyzer for the system call traces that are happening from userspace, showing exactly what's getting called and what's getting returned from the kernel. 
  ![image](https://github.com/mariamahmed2/Magic-Ant/assets/64314238/d504520a-3054-43d2-9367-c5055a1cfb02)
+ 
 The actual system call for open is occurring and it's returning three. Three is going to be our file descriptor and then you can see the call that's going to check the file for content, there's a read on the same three file descriptor that we opened here in the previous step, and you can see that it's returning zero bytes.
 ### Non-Blocking Reads
 ![image](https://github.com/mariamahmed2/Magic-Ant/assets/64314238/490f7684-9fd1-4842-b73f-d0f657086ba3)
