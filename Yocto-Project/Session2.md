@@ -81,9 +81,9 @@ do_install_append() {
 }
 
 FILES_${PN} += "${bindir}/hello"
-
-The recipe does the following:
 ```
+The recipe does the following:
+
 - It sets the description, license, and license checksum for the package.
 - It fetches the source code from a git repository using the SRC_URI variable.
 - It sets the source directory to the git subdirectory in the work directory using the S variable.
