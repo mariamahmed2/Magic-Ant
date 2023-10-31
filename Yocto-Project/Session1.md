@@ -16,15 +16,15 @@ To use the Yocto Project and Pokey, you need to set up a build directory where a
 ### Building and running an image
 Building an image using the Yocto Project and Pokey can take a lot of processor power and time, depending on your hardware and network speed. To build an image, you can use the `bitbake` command with the name of the image recipe as an argument. For example, to build a minimal image, you can use this command:
 
-'''
+```
 bitbake core-image-minimal
-'''
+```
 
 This command will download all the required source code, apply patches, compile and install the packages, and create an image file in the `build/tmp/deploy/images/qemuarm` directory.
 
 To run the image on a QEMU emulator, you can use the `runqemu` command with some options. For example, to run the minimal image on a QEMU ARM device without graphical output and with user-mode networking, you can use this command:
 
-'''
+```
 runqemu qemuarm nographic slirp
-'''
+```
 This command will launch QEMU with the appropriate parameters and boot the image. You can log in as root without a password. You can use some commands to check the system information, such as `uname -a`. To shut down the system, you can use `poweroff`.
